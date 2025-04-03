@@ -1,0 +1,17 @@
+form.form-container{
+    display: grid;
+    gap: 20px;
+    /* flex-direction: row; */
+}
+
+form.form-container > label {
+    width: 100%;
+    text-align: end;
+}
+
+form.form-container > label > input,textarea {
+    width: 50%;
+    margin-left: 20px;
+    /* justify-content: end; */
+}
+
