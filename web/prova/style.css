@@ -1,0 +1,63 @@
+#menu_principal {
+    & .nav-link {
+        text-align: center;
+    }
+
+}
+
+.navbar .navbar-brand {
+    margin-left: var(--bs-navbar-brand-margin-end)
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    &>.container {
+        flex-grow: 1;
+    }
+}
+
+.img-projeto {
+    background-image: url(img/projeto.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 140px;
+    height: 140px;
+}
+
+article>h2 {
+    padding-bottom: 1.5rem;
+}
+
+#experiencia_profissional {
+    & h2>span {
+        font-weight: normal;
+        color: var(--bs-secondary-color) !important;
+    }
+
+    & .row {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.img-ueg {
+    background-image: url(img/ueg.gif);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 5rem;
+}
+
+.lista-foguete{
+    list-style: space-counter;
+    counter-reset: space-counter;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+@counter-style space-counter {
+    symbols: "\1F680" "\1F6F8" "\1F6F0" "\1F52D";
+    suffix: " ";
+}
