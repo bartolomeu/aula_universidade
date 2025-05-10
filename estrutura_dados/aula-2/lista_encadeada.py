@@ -56,16 +56,21 @@ if __name__ == "__main__":
     faixa3 = Faixa(3, "Hidropônica")
     faixa4 = Faixa(4, "Que pais é esse")
     faixa5 = Faixa(5, "The Decline")
+    faixa6 = Faixa(6, "Pet Cemetery")
 
     playlist = PlayList(faixa1)
     playlist.adcionar(faixa2)
     playlist.adcionar(faixa3, False)
     playlist.adcionar(faixa4, False)
     playlist.adcionar(faixa5)
+    playlist.adcionar(faixa6, False)
 
     print(playlist.buscar(5).titulo)  # The Decline
     playlist.remover(5)
     print(playlist.buscar(5))  # None
+    playlist.remover(6)
+
+    # # Corrigir remover primeiro, meio e último
     print('---------')
 
 

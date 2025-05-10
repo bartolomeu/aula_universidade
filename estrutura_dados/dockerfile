@@ -1,0 +1,7 @@
+FROM python:latest
+
+WORKDIR /usr/local/bin
+
+COPY aula-2 .
+
+CMD ["python", "lista_encadeada.py"]
