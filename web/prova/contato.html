@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio</title>
+
+  <link href="bootstrap-5.3.5-dist/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="contato.js"></script>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg" aria-label="Menu Principal">
+    <div class="container bg-body-tertiary rounded">
+      <a class="navbar-brand" href="index.html">Portifólio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu_principal"
+        aria-controls="menu_principal" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu_principal">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">
+              <i class="bi-house d-block mx-auto mb-1"></i>
+              Sobre
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="experiencia_profissional.html">
+              <i class="bi-briefcase d-block mx-auto mb-1"></i>
+              Experiências Profissionais
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="academica.html">
+              <i class="bi-mortarboard d-block mx-auto mb-1"></i>
+              Vida Acadêmica
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projetos.html">
+              <i class="bi-code-square d-block mx-auto mb-1"></i>
+              Projetos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contato.html">
+              <i class="bi-envelope-at-fill d-block mx-auto mb-1"></i>
+              Contato
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="container">
+    <header class="border-bottom my-4">
+      <h1>Portfólio do Grupo</h1>
+    </header>
+    <article>
+      <h2 class="text-end">Contato</h2>
+
+      <form onsubmit="return validaForm(event)">
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        </div>
+
+        <div class="mb-3">
+          <label for="telefone" class="form-label">Telefone</label>
+          <input type="tel" class="form-control" id="telefone" placeholder="(XX) 4444-4444">
+        </div>
+
+        <div class="mb-3">
+          <label for="mensagem" class="form-label">Mensagem</label>
+          <textarea class="form-control" id="mensagem">
+          </textarea>
+        </div>
+        <div class="mb-3">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+
+
+      
+    </article>
+    
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="respostaForm" tabindex="-1" aria-labelledby="respostaFormLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="respostaFormLabel">Contato enviado com Sucesso</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Muito Obrigado! Em breve entraremos em contato.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <footer class="position-sticky bottom-0 pt-2 w-100 text-center bg-secondary text-light">
+    <p>&copy; 2025 - Portfólio do XXX</p>
+    <p>Desenvolvido por XXX</p>
+  </footer>
+</body>
+
+</html>
