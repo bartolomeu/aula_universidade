@@ -1,0 +1,3 @@
+[submodule "arquitetura-software/Eventos"]
+	path = arquitetura-software/Eventos
+	url = git@github.com:bartolomeu/Eventos.git
